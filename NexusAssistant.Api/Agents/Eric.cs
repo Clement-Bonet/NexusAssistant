@@ -48,8 +48,8 @@ Examples: "Complete application architecture?",
         var response = await CompleteAsync(history);
         return response.Trim().ToUpper() switch
         {
-            "TRIVIALE" => ComplexityLevel.Fast,
-            "COMPLEXE" => ComplexityLevel.Debate,
+            "TRIVIAL" or "TRIVIALE" => ComplexityLevel.Fast,
+            "COMPLEX" or "COMPLEXE" => ComplexityLevel.Debate,
             _ => ComplexityLevel.Normal
         };
     }

@@ -80,7 +80,7 @@ public abstract class Auguste
             .Replace("<｜end▁of▁sentence｜>", "");
 
         result = Regex.Replace(result,
-            @"\*{0,2}(SIMPLE|TRIVIALE|COMPLEXE|STANDARD)\*{0,2}\s*", "");
+            @"\*{0,2}(SIMPLE|TRIVIALE?|COMPLEXE?|STANDARD)\*{0,2}\s*", "");
 
         result = Regex.Replace(result, @" {2,}", " ");
         result = Regex.Replace(result, @" ([.,;:!?])", "$1");
