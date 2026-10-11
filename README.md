@@ -73,7 +73,7 @@ Client  ──POST /api/chat/ask──▶  ChatController
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/Csluikidikilest/NexusAssistant.git
+git clone https://github.com/Clement-Bonet/NexusAssistant.git
 cd NexusAssistant
 dotnet restore
 ```
